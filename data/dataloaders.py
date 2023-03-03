@@ -79,11 +79,12 @@ class EsposallesTextDataset:
         pass
 
 
-E = EsposallesTextDataset()
-print(E[0], len(E))
-E.test()
+if __name__ == '__main__':
+    E = EsposallesTextDataset()
+    print(E[0], len(E))
+    E.test()
 
-print(E[0], len(E))
-E.train()
+    print(E[0], len(E))
+    E.train()
 
-print(E[0], len(E))
+    print(E[0], len(E))
