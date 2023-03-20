@@ -48,7 +48,7 @@ class EsposallesTextDataset:
         register = self.registers[idx]
         x, gt =  self.data[register]
         
-        return x.split(), [None if y == 'other' else y for y in gt.split()]
+        return x.split(), [y for y in gt.split()]
 
     def __next__(self):
         
